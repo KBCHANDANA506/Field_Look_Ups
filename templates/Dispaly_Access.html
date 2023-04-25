@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display_Access</title>
+</head>
+<body>
+    <center>
+        <h1>Display_AccessRecords Model</h1>
+        <table border="2">
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Date</th>
+            </tr>
+        {% for AO in access %}
+            <tr>
+                <td>{{AO.Name}}</td>
+                <td>{{AO.Author}}</td>
+                <td>{{AO.Date}}</td>
+            </tr>
+
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
